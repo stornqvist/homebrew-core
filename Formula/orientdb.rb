@@ -70,16 +70,16 @@ class Orientdb < Formula
         <string>homebrew.mxcl.orientdb</string>
         <key>ProgramArguments</key>
         <array>
-          <string>/usr/local/opt/orientdb/libexec/bin/server.sh</string>
+          <string>#{libexec}/bin/server.sh</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
         <key>WorkingDirectory</key>
-        <string>/usr/local/var</string>
+        <string>#{var}</string>
         <key>StandardErrorPath</key>
-        <string>/usr/local/var/log/orientdb/serror.log</string>
+        <string>#{var}/log/orientdb/serror.log</string>
         <key>StandardOutPath</key>
-        <string>/usr/local/var/log/orientdb/sout.log</string>
+        <string>#{var}/log/orientdb/sout.log</string>
       </dict>
     </plist>
   EOS
